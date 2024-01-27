@@ -1,0 +1,16 @@
+app:
+  config:
+    id: 'streamlit'
+
+llm:
+  provider: ollama
+  config:
+    model: 'mixtral'
+    temperature: 0.1
+    top_p: 1
+    stream: true
+
+embedder:
+  provider: huggingface
+  config:
+    model: 'sentence-transformers/all-mpnet-base-v2'

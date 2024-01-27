@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "xchat"
+version = "0.1.0"
+description = "Create chatbot for all."
+authors = ["lilac <lilac@curateds.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+embedchain = "^0.1.71"
+streamlit = "^1.30.0"
+Flask = "^3.0.1"
+Flask-SQLAlchemy = "^3.1.1"
+sentence-transformers = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+isort = "^5.13.2"
+watchdog = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
