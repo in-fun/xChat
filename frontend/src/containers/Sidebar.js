@@ -56,8 +56,8 @@ export default function Sidebar() {
                 height={0}
                 className="block h-auto w-auto"
               />
-              <span className="self-center text-2xl font-bold whitespace-nowrap">
-                Embedchain
+              <span className="text-2xl font-bold whitespace-nowrap">
+                xChat
               </span>
             </Link>
             <ul className="space-y-2 font-medium text-lg">
@@ -69,6 +69,12 @@ export default function Sidebar() {
                 >
                   <SettingsIcon className="w-6 h-6 text-gray-600 transition duration-75 group-hover:text-gray-900" />
                   <span className="ml-3">Settings</span>
+                </Link>
+                <Link
+                  href="/create"
+                  className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-200"
+                >
+                  Create Bot
                 </Link>
               </li>
 
@@ -94,7 +100,7 @@ export default function Sidebar() {
                       <React.Fragment key={index}>
                         <li>
                           <Link
-                            href={`/${bot.slug}/app`}
+                            href={`/${bot.slug}/chat`}
                             className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-200"
                           >
                             {bot.name}
@@ -111,14 +117,11 @@ export default function Sidebar() {
 
           {/* Social Icons */}
           <div className="mt-auto mb-3 flex flex-row justify-evenly sticky bottom-3">
-            <a href="https://twitter.com/embedchain" target="blank">
-              <TwitterIcon className="w-6 h-6 text-gray-600 transition duration-75 hover:text-gray-900" />
-            </a>
             <a href="https://github.com/embedchain/embedchain" target="blank">
               <GithubIcon className="w-6 h-6 text-gray-600 transition duration-75 hover:text-gray-900" />
             </a>
             <a
-              href="https://www.linkedin.com/company/embedchain"
+              href="https://www.linkedin.com/in/dengj"
               target="blank"
             >
               <LinkedinIcon className="w-6 h-6 text-gray-600 transition duration-75 hover:text-gray-900" />
