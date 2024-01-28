@@ -1,4 +1,8 @@
 .venv
 .DS_Store
+.next
+node_modules
+
 # Local database files
 db
+*.db

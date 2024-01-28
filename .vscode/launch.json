@@ -5,6 +5,24 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Server",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/backend",
+      "program": "server.py",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
       "name": "Streamlit: Current File",
       "type": "python",
       "request": "launch",
