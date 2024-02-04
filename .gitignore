@@ -3,6 +3,8 @@
 .next
 node_modules
 
+.env
+
 # Local database files
 db
 *.db
